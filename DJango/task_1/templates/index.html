@@ -1,0 +1,17 @@
+{%extends 'layout.html'%}
+{% block title %}Dhruv | Software Developer{%endblock%}
+
+{% block content %}
+<section class="flex items-center justify-center min-h-screen bg-gray-900">
+    {% comment %} basic intro {% endcomment %}
+    <div class="text-center">
+        <h1 class="text-5xl font-bold animate-bounce">Hello, I'm <span class="text-green-400">Dhruv Soni</span></h1>
+        <p class="mt-4 text-xl">A Software Development Engineer specialized in Java and Python</p>
+        <a href="/about" class="mt-8 inline-block px-6 py-2 bg-green-400 text-gray-900 rounded-lg shadow-md hover:bg-green-500 transition duration-300">
+            Learn More About Me
+        </a>
+        kem che
+        {%for i in servicename%}<li>{{i.title}}</li>{%endfor%}
+    </div>
+</section>
+{% endblock %}

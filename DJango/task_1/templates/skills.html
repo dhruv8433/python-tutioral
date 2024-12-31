@@ -1,0 +1,25 @@
+{% extends 'index.html' %}
+{% block title %}Skills{% endblock %}
+{% block content %}
+<section class="container mx-auto py-16">
+    <h2 class="text-4xl font-bold text-center mb-8">My Skills</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="p-4 bg-gray-800 rounded-lg shadow-lg text-center hover:scale-105 transition-transform">
+            <h3 class="text-xl font-bold text-green-400">Java</h3>
+            <p>Expertise in backend development and frameworks.</p>
+        </div>
+        <div class="p-4 bg-gray-800 rounded-lg shadow-lg text-center hover:scale-105 transition-transform">
+            <h3 class="text-xl font-bold text-green-400">Python</h3>
+            <p>Proficient in scripting, data analysis, and automation.</p>
+        </div>
+        <div class="p-4 bg-gray-800 rounded-lg shadow-lg text-center hover:scale-105 transition-transform">
+            <h3 class="text-xl font-bold text-green-400">Django</h3>
+            <p>Experience in building robust web applications.</p>
+        </div>
+        <div class="p-4 bg-gray-800 rounded-lg shadow-lg text-center hover:scale-105 transition-transform">
+            <h3 class="text-xl font-bold text-green-400">Tailwind CSS</h3>
+            <p>Creating beautiful and responsive designs.</p>
+        </div>
+    </div>
+</section>
+{% endblock %}

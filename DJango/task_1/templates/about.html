@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block content %}
+{% load static %}
+
+<section class="container mx-auto py-16">
+    <h2 class="text-4xl font-bold text-center mb-8">About Me</h2>
+    <div class="flex flex-wrap items-center justify-center space-x-4 h-[400px]">
+        <img src="{% static '/asset/test.jpg' %}" alt="Profile Picture" width="50%" class=" shadow-lg h-[300px] w-[300px] object-cover">
+        <p class="max-w-2xl text-lg">
+            I am Dhruv Soni, an experienced Software Development Engineer with expertise in Java and Python. I have worked on numerous projects involving backend development, API design, and system architecture. My passion is creating efficient and scalable solutions for real-world problems.
+        </p>
+    </div>
+</section>
+{% endblock %}

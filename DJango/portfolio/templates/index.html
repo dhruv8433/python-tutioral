@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% block title %}Portfolio{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+    <!-- Hero Section -->
+    <div class="text-center my-5">
+        <h1 class="display-4 fw-bold">Welcome to My Portfolio</h1>
+        <p class="lead text-muted">Explore a collection of my projects, skills, and achievements.</p>
+        <a href="/projects" class="btn btn-primary btn-lg px-4 me-2">View Projects</a>
+        <a href="/contact" class="btn btn-outline-secondary btn-lg px-4">Contact Me</a>
+    </div>
+
+    <!-- Featured Projects Section -->
+    <section id="projects" class="my-5">
+        <h2 class="text-center fw-bold mb-4">Featured Projects</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card shadow-sm h-auto">
+                    <img src="https://cdn-cdoep.nitrocdn.com/VQPjznWAOYrkfTuBQJOtcxGEtvasGujY/assets/images/optimized/rev-908f50e/uvik.net/wp-content/uploads/2022/09/instagram.png" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Instagram Clone</h5>
+                        <p class="card-text">A Social Media plateform where all people can come and connect with each other and enjoy reels, feeds and much more.</p>
+                        <a href="#Instagram" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm h-auto">
+                    <img src="https://w3layouts.b-cdn.net//wp-content/uploads/2023/10/eccentric.jpg" class="card-img-top" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Portfolio Website</h5>
+                        <p class="card-text">A Portfolio website for software developer that beautiful and trending website over internet.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm h-auto">
+                    <img src="https://elements-resized.envatousercontent.com/elements-cover-images/d81379ae-4027-4433-a1e0-0bc8efdea041?w=433&cf_fit=scale-down&q=85&format=auto&s=5849ac73e670251ee811ad85a6c0dba6fa57f631d4b6425be69e64821036400f" class="card-img-top h-20" alt="Project 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Blogger Website</h5>
+                        <p class="card-text">Blogging website for trending topics.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="my-5 bg-light py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-4">About Me</h2>
+            <p class="text-center text-muted">
+                I am a passionate software developer with expertise in java, python, django, spring boot, and more. I have  been working in the software development industry for over 1 years and have worked on a variety of projects ranging from web development to mobile app development. i also have been working in web development for over 1 year and have worked on a variety of projects ranging from web development to mobile app development.
+                i also have good knowledge of react, next js, node js, express js and much more.
+            </p>
+        </div>
+    </section>
+</div>
+{% endblock %}

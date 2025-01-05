@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}Projects{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+  <h2 class="text-center mb-5">My Projects</h2>
+  <div class="row gy-4">
+    {% for p in projectData %}
+    <div class="col-md-6 col-lg-4">
+      <div class="card shadow-sm h-100">
+        <!-- Project Image -->
+        <img src="/media/{{ p.image }}" class="card-img-top" alt="{{ p.title }}">
+        <!-- Card Body -->
+        <div class="card-body">
+          <h5 class="card-title text-primary fw-bold">{{ p.title }}</h5>
+          <p class="card-text text-muted">
+            {{ p.description|truncatechars:100 }}
+          </p>
+        </div>
+        <!-- Card Footer -->
+        <div class="card-footer bg-white border-0 text-center">
+          <a href="{{ p.url }}" class="btn btn-outline-primary w-100">Learn More</a>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

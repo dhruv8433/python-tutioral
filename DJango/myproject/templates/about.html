@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block body %}
+<html>
+  <head>
+    <title>About</title>
+  </head>
+  {% comment %} <script src="/static/js/index.js"></script> {% endcomment %}
+  <body>
+    {% comment %} <h1>About {{name}}</h1> {% endcomment %}
+    <h1>About {{output.msg}}</h1>
+    <p>This is a simple about page. {{Id}}</p>
+    {% for i in car%} {%if i in "BMW"%}
+
+    <p>Good choice</p>
+    {%else%}
+    <p>Bad choice</p>
+    {%endif%} {% comment %}
+    <p>{{i}}</p>
+    {% endcomment %} {% endfor %}
+  </body>
+</html>
+{%endblock%}

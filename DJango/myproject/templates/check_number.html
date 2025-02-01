@@ -1,0 +1,6 @@
+<form method="post">
+  {% csrf_token %}
+  <input type="number" id="num" name="num" value="" required />
+  <button type="submit">Check</button>
+  <b>Result: {{status}}</b>
+</form>

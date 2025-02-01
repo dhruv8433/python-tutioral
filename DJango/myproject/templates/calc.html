@@ -1,0 +1,8 @@
+<form method="post">
+    {% csrf_token %}
+  {{form.as_p}}
+
+    <button type="submit">Calculate</button>
+    <input type="text" name="name" length="6" required>
+    <b>Result: {{result}}</b>
+</form>

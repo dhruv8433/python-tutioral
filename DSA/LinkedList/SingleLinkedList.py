@@ -11,9 +11,9 @@ class LinkedList:
         if not self.head:
             print("List is empty")
             return
-        temp = self.head
+        temp = self.head # 1001
         while temp:
-            print(temp.data, end=" -> ")
+            print(temp.data, end=" -> ") # 10, 1002 | 20, 2000
             temp = temp.next
         print("None")
 
@@ -37,13 +37,13 @@ class LinkedList:
         if pos == 0:
             self.insert_at_beginning(data)
             return
-        temp = self.head
+        temp = self.head # 3 - 1 = 2
         for _ in range(pos - 1):
             if not temp:
                 print("Position out of bounds")
                 return
             temp = temp.next
-        new_node.next = temp.next
+        new_node.next = temp.next 
         temp.next = new_node
 
     def delete_at_beginning(self):
@@ -81,7 +81,7 @@ class LinkedList:
             print("Position out of bounds")
             return
         temp.next = temp.next.next
-
+        # 2 = 4
 # Testing the linked list
 ll = LinkedList()
 ll.insert_at_end(10)

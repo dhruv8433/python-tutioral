@@ -1,6 +1,6 @@
 from array import *
 
-a1 = array('i', [10, 20, 30]) # i - signed int
+a1 = array('i', [10, 20, 30, 10]) # i - signed int
 print(type(a1)) # <class 'array.array'>
 
 for x in a1:

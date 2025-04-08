@@ -18,6 +18,9 @@ class LinkedList:
         print("None")
 
     def insert_at_beginning(self, data):
+        if not self.head:
+            self.head = Node(data)
+            return
         new_node = Node(data)
         new_node.next = self.head
         self.head = new_node

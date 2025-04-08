@@ -2,7 +2,7 @@ class Stack:
     def __init__(self):
         self.data = []  # Use self.data to store stack elements
 
-class StackUsingList(Stack):
+class StackUsingList:
     def __init__(self):
         super().__init__()  # Initialize the base class constructor
 
@@ -15,6 +15,7 @@ class StackUsingList(Stack):
                 print(i)
 
     def push(self, value):
+        super
         self.data.append(value)  # Use append to push to stack
 
     def pop(self):

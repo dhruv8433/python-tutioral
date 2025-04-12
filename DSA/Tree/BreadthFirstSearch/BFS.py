@@ -25,6 +25,28 @@ def bfs(root):
         if current.right is not None:
             queue.append(current.right)
 
+def element_exists_bfs(root, target):
+    if root is None:
+        return False
+
+    queue = [root]
+
+    while len(queue) > 0:
+        current = queue[0]
+        queue = queue[1:]
+
+        if current.value == target:
+            print(f"Element {target} found in the tree.")
+            return True
+
+        if current.left is not None:
+            queue.append(current.left)
+        if current.right is not None:
+            queue.append(current.right)
+
+    return False
+
+
 
 # Create the tree manually:
 #         A

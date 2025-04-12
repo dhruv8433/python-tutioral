@@ -1,34 +1,53 @@
+# 🧮 Manual Adjacency Matrix Representation of Graph in Python
 
-# 📊 Adjacency Matrix Graph Implementation
-A simple and clean Python implementation of a **Graph using an Adjacency Matrix**. This is for representing an **undirected** and **simple** graph (i.e., no self-loops or multiple edges).
-
-## 📌 Project Structure
-
-This file defines a `Graph` class with the following methods:
-- `__init__` to initialize the adjacency matrix
-- `add_edge()` to add an edge between two vertices
-- `remove_edge()` to remove an edge
-- `has_edge()` to check the existence of an edge
-- `print_adj_matrix()` to display the adjacency matrix
+This file demonstrates how to implement a **Graph using an Adjacency Matrix** in Python. The matrix approach is useful for dense graphs, and operations like checking for edge existence are performed in constant time.
 
 ---
 
-## 🧠 Visual Guide
+## 📌 Adjacency Matrix Concept
 
-Here’s a visual explanation of the implementation and how the adjacency matrix works:
+An **Adjacency Matrix** is a 2D array (or list of lists) used to represent a graph. The matrix has rows and columns representing vertices, and the value at position `[i][j]` is:
+- `1` if there's an edge from vertex `i` to `j`
+- `0` otherwise
 
-![image](https://github.com/user-attachments/assets/c370017a-20b9-49be-afa8-8098c3111226)
+This approach works well for **undirected**, **simple** graphs — no self-loops or duplicate edges.
 
 ---
 
-## 🛠️ How to Use
+## 🧠 Key Highlights
 
-1. Clone or copy the code file.
-2. Run the Python script containing the `Graph` class.
-3. Try adding/removing edges and printing the matrix.
+- Manual matrix logic using a nested list
+- Support for adding, removing, and checking edges
+- Fast edge lookup (`O(1)` time)
+- Visual and compact representation of connections
+
+---
+
+## 📷 Visual Explanation
+
+The image below provides a full visual representation of:
+
+- The matrix structure (rows vs columns)
+- How connections are stored numerically
+- Sample graph with 3 vertices and edges
+- Logical flow of edge addition and visualization
+
+![Adjacency Matrix](image.png)
+
+---
+
+## 💡 Use Cases
+
+- Useful for **dense graphs** with many connections
+- Great for **shortest path algorithms** like Floyd-Warshall
+- Works well when edge existence queries are frequent
+- Suitable for **graph simulations**, matrices, and quick math-based traversal
+
+---
+
+## ✅ Example Usage
 
 ```python
-# Example usage:
 g = Graph(3)
 g.add_edge(0, 1)
 g.add_edge(1, 2)

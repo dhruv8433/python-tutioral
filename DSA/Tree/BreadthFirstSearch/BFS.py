@@ -65,3 +65,7 @@ root.right.right = Node('G')
 
 print("Manual BFS Traversal:")
 bfs(root)
+
+element_exists_bfs(root, 'E')  # Should print "Element E found in the tree."
+element_exists_bfs(root, 'Z')  # Should not find the element
+element_exists_bfs(root, 'A')  # Should print "Element A found in the tree."

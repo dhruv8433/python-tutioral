@@ -1,44 +1,46 @@
-class Stack:
-    def __init__(self):
-        self.data = []  # Use self.data to store stack elements
-
 class StackUsingList:
     def __init__(self):
-        super().__init__()  # Initialize the base class constructor
+        self.stack = []  # Initialize an empty list to represent the stack
+        self.size = 0    # Initialize the size of the stack
+    
+    def push(self, item):
+        self.stack.append(item)
+        self.size += 1
+    
+    def isEmpty(self):
+        return self.size == 0
 
-    def display(self):
-        if not self.data:
+    def Pop(self):
+        if self.isEmpty():
+            return None
+        self.stack.pop(self.size - 1)  # Remove the last item (top of the stack)
+        self.size -= 1
+
+    def peek(self):
+        if self.isEmpty():
+            return None
+        return self.stack[self.size - 1]
+    
+    def print(self):
+        if self.isEmpty():
             print("Stack is empty")
         else:
-            print("Stack (top to bottom):")
-            for i in reversed(self.data):
-                print(i)
-
-    def push(self, value):
-        super
-        self.data.append(value)  # Use append to push to stack
-
-    def pop(self):
-        if not self.data:
-            print("Stack Underflow")
-            return None
-        return self.data.pop()
+            # first start, end and diff is -1
+            for i in range(self.size - 1, -1, -1): # Print from top to bottom
+                print(self.stack[i], end = "->")
+            print("None")
     
-    def peek(self):
-        if not self.data:
-            print("Stack is empty")
-            return None
-        return self.data[-1]
+sl = StackUsingList()
+sl.push(10)
+sl.push(20)
+sl.push(30)
 
-# Example usage
-st = StackUsingList()
-st.push(10)
-st.push(20)
-st.push(30)
+print("\npeek element is :", sl.peek())
 
-st.display()
+sl.print()
 
-print("Popped:", st.pop())
-st.display()
+sl.Pop()
 
-print("Peek:", st.peek())
+print("\npeek element is :", sl.peek())
+
+sl.print()

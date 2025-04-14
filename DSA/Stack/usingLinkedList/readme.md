@@ -1,6 +1,6 @@
 # 🧱 Stack Implementation Using Linked List
 
-This project provides a manual implementation of a **Stack** using a **Linked List** in Python. Unlike array-based stacks, linked list stacks dynamically allocate memory and are more efficient for frequent insertions/removals.
+This file provides a manual implementation of a **Stack** using a **Linked List** in Python. Unlike array-based stacks, linked list stacks dynamically allocate memory and are more efficient for frequent insertions/removals.
 
 ---
 

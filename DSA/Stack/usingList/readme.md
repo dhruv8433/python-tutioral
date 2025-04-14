@@ -1,6 +1,6 @@
 # 📦 Manual Stack Implementation Using List
 
-This project demonstrates how to manually implement a **Stack** in Python using a list — without using any built-in stack libraries or collections. The goal is to understand how push, pop, peek, and print operations work internally in a Last-In-First-Out (LIFO) structure.
+This file demonstrates how to manually implement a **Stack** in Python using a list — without using any built-in stack libraries or collections. The goal is to understand how push, pop, peek, and print operations work internally in a Last-In-First-Out (LIFO) structure.
 
 ---
 

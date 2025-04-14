@@ -13,22 +13,21 @@ class StackUsingList:
     def Pop(self):
         if self.isEmpty():
             return None
-        self.stack.pop(self.size - 1)  # Remove the last item (top of the stack)
+        self.stack.pop(-1)  # Remove the last item (top of the stack)
         self.size -= 1
 
     def peek(self):
         if self.isEmpty():
             return None
-        return self.stack[self.size - 1]
+        return self.stack[-1]
     
     def print(self):
         if self.isEmpty():
             print("Stack is empty")
         else:
-            # first start, end and diff is -1
-            for i in range(self.size - 1, -1, -1): # Print from top to bottom
-                print(self.stack[i], end = "->")
-            print("None")
+            for i in range(len(self.stack)):
+                print(self.stack[i], end="->")
+            
     
 sl = StackUsingList()
 sl.push(10)
